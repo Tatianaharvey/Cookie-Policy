@@ -34,6 +34,7 @@
     transform: scale(0.6)
 }
 
+
 .cookie-title {
     font-size: 1.2rem;
     font-weight: lighter;
@@ -53,5 +54,25 @@ button {
     font-size: 0.7rem;
     font-weight: bold;
     border-radius: 0.3rem;
+    cursor: pointer;
 }
 
+
+#crumbs {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    40% {
+      transform: scale(1) rotate(1deg);
+    }
+    80% {
+      transform: scale(1) rotate(-3deg);
+    }
+    100% {
+      transform: scale(0.9) rotate(0);
+    }
+  }
