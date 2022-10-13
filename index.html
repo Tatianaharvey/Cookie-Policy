@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cookie-container">
+    <button data-modal-target="#modal">Click me</button>
+    <div class="modal" id="modal">
         <svg class="cookie" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="cookies-svgrepo-com 1" clip-path="url(#clip0_1_3)">
             <g>
@@ -77,11 +78,11 @@
         <div class="text">
             <h2 class="cookie-title">Cookie Policy</h2>
             <p class="cookie-subtitle">We use analytical cookies (yum) to make your experience on this website better.</p>
-            <button>Ok, got it!</button>
+            <button data-close-button class="close-button">Ok, got it!</button>
         </div>
 
     </div>
-
+   
     <script src="main.js"></script>
 </body>
 </html>
